@@ -5,8 +5,29 @@
     gap: 1rem;
 }
 
-.news__title, .news__text, .news__btn {
-text-align: center;
+.news__title  {
+    font-family: "Asket Extended";
+    color: $royal_blue;
+    font-size: 1.75rem;
+    font-style: normal;
+    align-self: center;
+    text-align: center;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+    width: 13.5625rem;
+    height: 2.625rem;
+}
+
+.news__text {
+    color: $royal_blue;
+    align-self: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 57.5rem;
+    height: 2.375rem;
 }
 
 .news__items {
@@ -20,14 +41,14 @@ text-align: center;
     padding: 0.9rem;
     margin: 0.8rem;
     height: auto;
-    box-shadow: 0 0 0.8rem 0 $shadow;
+    box-shadow: 0 0 0.8rem 0 $royal_blue;
     background: $white;
     transform: translateZ(0);
     backface-visibility: hidden;
 }
 
 .news__item:hover {
-    box-shadow: 0 0 0.8rem 0 $black;
+    box-shadow: 0 0 0.8rem 0 $golden;
     background: $white;
     transform: translateZ(0);
     backface-visibility: hidden;
@@ -53,12 +74,12 @@ text-align: center;
     padding: 1.1rem 0 1.3rem;
     font-weight: 700;
     font-size: 1.3rem;
-    color: $black;
+    color: $royal_blue;
 }
 
 .news__item-title:hover {
-    text-decoration: underline 1px solid $black;
-    color: $black;
+    text-decoration: underline 1px solid $royal_blue;
+    color: $royal_blue;
     text-underline-offset: 3px;
     cursor: pointer;
 }
@@ -67,5 +88,9 @@ text-align: center;
     margin: 0;
     margin-bottom: 1.3rem;
     font-size: 0.8rem;
-    color: $black;
+    color: $royal_blue;
+}
+
+.news__btn {
+    text-align: center;
 }
