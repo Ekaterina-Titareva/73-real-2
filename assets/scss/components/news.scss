@@ -1,96 +1,181 @@
 
-.news__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.news{
+  background-color: $white;
 }
 
-.news__title  {
-    font-family: "Asket Extended";
-    color: $royal_blue;
-    font-size: 1.75rem;
-    font-style: normal;
-    align-self: center;
-    text-align: center;
-    font-weight: 800;
-    line-height: 150%;
-    text-transform: uppercase;
-    width: 13.5625rem;
-    height: 2.625rem;
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  // max-width: 1197px;
+}
+
+.news__wrapper {
+  padding: 4.1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news__title {
+  text-align: center;
+  color: $royal_blue;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 2.625rem */
+  text-transform: uppercase;
+  width: 13.5625rem;
+  height: 2.625rem;
 }
 
 .news__text {
-    color: $royal_blue;
-    align-self: center;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    width: 57.5rem;
-    height: 2.375rem;
+  color: $royal_blue;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.2rem */
+  width: 57.5rem;
+  height: 2.375rem;
 }
 
 .news__items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 0.6rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 2.8rem;
+  gap: 0.6rem;
 }
 
 .news__item {
-    display: flex;
-    padding: 0.9rem;
-    margin: 0.8rem;
-    height: auto;
-    box-shadow: 0 0 0.8rem 0 $royal_blue;
-    background: $white;
-    transform: translateZ(0);
-    backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+  max-width: 40%;
+  min-height: 40rem;
+  flex-shrink: 0;
+  box-shadow: 0 0 1rem 0 $royal_blue;
+  border-radius: 5px;
 }
 
-.news__item:hover {
-    box-shadow: 0 0 0.8rem 0 $golden;
-    background: $white;
-    transform: translateZ(0);
-    backface-visibility: hidden;
+.news__pic {
+  min-width: auto;
+  width: 100%;
+  min-height: 27.78rem;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.news__item-content {
-    display: flex;
-    flex: 1 1 16.3rem;
-    flex-direction: column;
-    overflow: hidden;
-    margin-left: 1.3rem;
+.news__overlay {
+  position: absolute;
+  top: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6667rem 1.1rem 1.1rem;
+  height: 100%;
+  box-sizing: border-box;
+  background: #2f3688cd;
+  transition: all 2s ease-in-out;
+  backdrop-filter: blur(0.3rem);
 }
 
-.news__item-img {
-    object-fit: cover;
-    max-width: 100%;
-    height: 14rem;
-    width: 13rem;
+.news__overlay:hover {
+  top: 0;
+  cursor: pointer;
 }
 
-.news__item-title {
-    margin: 0;
-    padding: 1.1rem 0 1.3rem;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: $royal_blue;
+.news__overlay-info {
+  display: flex;
+  flex-direction: column;
+  align-items: unset;
+  gap: 10px;
+  margin-bottom: 1rem;
 }
 
-.news__item-title:hover {
-    text-decoration: underline 1px solid $royal_blue;
-    color: $royal_blue;
-    text-underline-offset: 3px;
-    cursor: pointer;
+.news__overlay-title {
+  color: $white;
 }
 
-.news__item-text {
-    margin: 0;
-    margin-bottom: 1.3rem;
-    font-size: 0.8rem;
-    color: $royal_blue;
+.news__overlay-title_first {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 120%;
 }
 
-.news__btn {
-    text-align: center;
+.news__overlay-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  color: $white;
+}
+
+.news__overlay-description {
+  font-size: 0.8rem;
+  line-height: 150%;
+  color: $white;
+}
+
+.overlay__button {
+  margin-top: auto;
+  width: 9.8rem;
+  height: 2.4rem;
+}
+@media screen and (max-width: 1023px) {
+.news__overlay-info {
+  flex-direction: column;
+  align-items: unset;
+  gap: 10px;
+}
+}
+@media screen and (max-width: 991px) {
+// Начало блока Новости Екатерины
+.news__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news__item {
+  max-width: 85%;
+}
+
+.news__overlay {
+  top: 68%;
+}
+
+.news__overlay-info {
+  margin-bottom: 9rem;
+}
+// Конец блока Новости Екатерины
+}
+
+@media screen and (max-width: 575px) {
+// Начало блока Новости Екатерины
+.news__item {
+  max-height: 20rem;
+}
+
+.news__overlay:hover {
+  top: 70%;
+  cursor: pointer;
+}
+
+.news__overlay-description {
+  display: none;
+}
+// Конец блока Новости Екатерины
+}
+@media screen and (max-width: 350px) {
+// Начало блока Новости Екатерины
+  .news__items {
+    display: none;
+  }
+// Конец блока Новости Екатерины
 }
