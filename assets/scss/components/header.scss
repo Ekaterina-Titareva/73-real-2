@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   max-width: 100%;
   min-height: 100vh;
+  background-size: cover;
   margin: 0;
   padding: 0;
   position: relative;
@@ -13,12 +14,17 @@
   height: 11rem;
   background-color: $shadow;
 }
+.header_logo {
+  display: flex;
+  
+}
 .logo {
   position: absolute;
-  width: 13rem;
-  height: 12rem;
-  top: 0.1rem;
-  left: 2rem;
+  width: 15rem;
+  height: 13rem;
+  
+  
+  
 }
 .header_menu {
   position: absolute;
@@ -47,8 +53,8 @@
   font-size: 1.2rem;
   font-style: normal;
   font-weight:900;
-  top: 3.5rem;
-  left: 14rem;
+  top: 2.7rem;
+  left: 15rem;
 }
 .ano-center {
   color: $black;
