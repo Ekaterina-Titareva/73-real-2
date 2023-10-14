@@ -18,16 +18,12 @@ body {
   height: 11rem;
   background-color: $shadow;
 }
-.header_logo {
-  display: flex;
-  
-}
 .logo {
   position: absolute;
-  width: 15rem;
-  height: 13rem;
-  
+  width: 13rem;
+  height: 8rem;
 }
+
 .header_menu {
   position: absolute;
   top: 20px; /* Расположение сверху */
@@ -36,15 +32,16 @@ body {
   border-radius: 5px;
   display: inline-flex;
   align-items: flex-start;
-  top: 3.5rem;
+  top: 2rem;
   gap:2rem;
   left: 42rem;
 }
 .header_menu_link {
   color: $black;
+  font-family: "Asket Extended";
   font-size: 1.1rem;
   font-style: normal;
-  font-weight: 550;
+  font-weight: 900;
   line-height: normal;
   text-decoration: none;
 }
@@ -55,8 +52,8 @@ body {
   font-size: 1.2rem;
   font-style: normal;
   font-weight:900;
-  top: 2rem;
-  left: 13rem;
+  top: 1.9rem;
+  left: 11rem;
 }
 .ano-center {
   color: $black;
@@ -67,4 +64,18 @@ body {
   line-height: 120%; /* 1.5rem */
   position: absolute;
   top:23rem;
+}
+.kvadrat {
+  width: 63rem;
+  height: 7rem;
+  display: inline-flex;
+  padding: 0.25rem 0.5rem;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+  background-color:rgba(240, 248, 255, 0.705);
+  border-radius: 10px 100px / 120px;
+  position: absolute;
+  top: 22rem;
+  left: 10rem;
 }
