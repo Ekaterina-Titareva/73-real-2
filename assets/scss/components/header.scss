@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .header {
   background-image: url(../images/glavnoe.jpg);
   background-repeat: no-repeat;
@@ -22,8 +26,6 @@
   position: absolute;
   width: 15rem;
   height: 13rem;
-  
-  
   
 }
 .header_menu {
@@ -53,8 +55,8 @@
   font-size: 1.2rem;
   font-style: normal;
   font-weight:900;
-  top: 2.7rem;
-  left: 15rem;
+  top: 2rem;
+  left: 13rem;
 }
 .ano-center {
   color: $black;
