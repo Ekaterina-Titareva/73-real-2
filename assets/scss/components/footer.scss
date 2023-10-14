@@ -1,24 +1,29 @@
 .container_k{
-    width: 100%;
+    flex-shrink: 0;
     height: 30rem;
-    background-color: #FFF8F1;
-    padding: 5rem 10rem;
+    background-image: url('../images/footer.jpg');
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    padding: 0 auto;
     display: flex;
     flex-direction: column;
 }
+
 .footer_top{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem;
+    
 }
 .footer_title{
-    font-family: "Nunito Sans";
-    font-size: 1.75rem;
+    font-family: "Asket Extended";
+    font-size: 2rem;
     font-style: normal;
     font-weight: 900;
     line-height: 150%;
-    color: #2f3788;
+    color:$golden;
   }
 .footer_bottom{
     display: grid;
@@ -83,10 +88,16 @@ border-radius: 6.25rem;
 .footer_questions{
     display: flex;
    flex-direction: column;
+   align-items: center;
 
 }
 .footer_questions_foto{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.footer_section{
+   color:#002366;
+
+   
 }
