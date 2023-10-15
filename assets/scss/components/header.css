@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.header {
+  background-image: url(../images/ph.jpg);
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header_menu_g {
+  position: absolute;
+  top: 20px; /* Расположение сверху */
+  left: 20px; /* Расположение слева */
+  padding: 10px 20px; /* Отступы вокруг меню */
+  border-radius: 5px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 39.063rem;
+  height: 1.563rem;
+  gap: 15px;
+}/*# sourceMappingURL=header.css.map */
