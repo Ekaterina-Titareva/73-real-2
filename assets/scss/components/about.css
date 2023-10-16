@@ -4,9 +4,8 @@
 }
 
 .about_company {
-  width: 50%;
-  margin: 0 25% 0 25%;
-  min-height: 700px;
+  min-width: 60%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content 1fr min-content;
@@ -36,8 +35,8 @@
 .about_company_text .company_profile,
 .about_company_text .company_ogrn,
 .about_company_text .company_address {
-  width: 50%;
-  margin-right: 15%;
+  width: 90%;
+  margin-right: 5%;
   overflow-wrap: break-word;
   color: var(--colors-black-text, #222);
   text-align: left;
@@ -52,6 +51,7 @@
   grid-area: 2/2/3/3;
 }
 .about_company_foto .about_foto {
+  width: 70%;
   margin: 3% 0 0 3%;
   box-shadow: 10px 10px 10px #B07C4B;
   transition: 1s; /* Время эффекта */
@@ -63,15 +63,11 @@
 .button_wrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
   justify-items: center;
   grid-area: 3/1/4/3;
 }
-.button_wrap .button_history,
-.button_wrap .button_info {
-  margin-top: 3%;
-}
-.button_wrap a {
-  color: #F7F7F7;
+.button_wrap .btn_history,
+.button_wrap .btn_info {
+  margin: 20px;
 }/*# sourceMappingURL=about.css.map */
