@@ -20,10 +20,10 @@
     font-family: "Asket Extended";
     font-size: 2.5rem;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 150%;
     color:$golden;
-    max-width: 27rem;
+    max-width: 50rem;
     
   }
 .footer_bottom{
@@ -105,9 +105,15 @@ border-radius: 6.25rem;
 }
 .footer_questions_foto{
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    align-items: center;
+    align-items: start;
     font-family: "Asket Extended";
+}
+.footer_questions_fototitle{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 }
 .footer_section{
    color:#002366;
