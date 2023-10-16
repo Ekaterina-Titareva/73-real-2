@@ -8,20 +8,21 @@
     gap: 3rem;
 }
 .ourservices{
-    color: var(--colors-black-text, #222);
-    font-family: Nunito Sans;
+    color: $royal_blue;
+    font-family: "Asket Extended";
     font-size: 1.75rem;
     font-style: normal;
     font-weight: 800;
     line-height: 150%; /* 2.625rem */
     text-transform: uppercase;
-    width: 13.5625rem;
+    width: 16.5625rem;
     height: 2.625rem;
+    margin-top: 4rem;
 }
 .textservices{
-    color: var(--colors-black-text, #222);
+    color: $golden;
 text-align: center;
-font-family: Nunito Sans;
+font-family: "Asket Extended";
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
@@ -42,7 +43,32 @@ justify-content: center;
     -webkit-column-count: 3;
     column-count: 3
 }
+.cardone {
+    box-shadow: 0 0 1rem 0 $royal_blue;
+    
+   
+    border-radius: 5px;
+}
+.card-title:hover {
+    position: relative;
+    opacity: 1;
+    transform: scale(1.1); 
+}
+.card-text {
+    color: $royal_blue;
+}
 
+
+.card-title {
+    font-family: "Asket Extended"; 
+    color: $golden;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .carousel-control-prev {
     margin-left: 4rem;
     margin-top: 19rem;
@@ -68,9 +94,9 @@ button {
         display: none;
     }
     .textservices{
-        color: var(--colors-black-text, #222);
+        color: $golden;
     text-align: center;
-    font-family: Nunito Sans;
+    font-family:"Asket Extended";
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -101,9 +127,9 @@ button {
         display: none;
     }
     .textservices{
-        color: var(--colors-black-text, #222);
+        color: $golden;
     text-align: center;
-    font-family: Nunito Sans;
+    font-family: "Asket Extended";
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
