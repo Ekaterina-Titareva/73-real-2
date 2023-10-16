@@ -1,64 +1,49 @@
-.container__our-experts{
+*{
+    outline:1px solid red;
+}
+.our-experts__container-1{
     min-width: 100%;
     margin: 0 auto;
-    // padding: 15px;
 }
-
 .our-experts__head {
-    // height: 46.1875rem;
-    // min-height: 100%;
-    // flex-shrink: 0;
     background: #F7F7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // gap: 3rem;
 }
-.container__list-of-experts{
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-}
-.card{
-    margin: 10px;
-    // padding: 10px;
-    width:100%;
-}
-.ourexperts{
+.our-experts__title{
     color: #2f3788;
-    font-family: Nunito Sans;
-    // font-size: 1.75rem;
-    font-size: clamp(1.25rem, 1vw, 1.75rem);
+    font-size:1.75rem;
     font-style: normal;
     font-weight: 800;
     line-height: 1.5; /* 2.625rem */
     text-transform: uppercase;
 }
-.textexperts {
+.our-experts__text{
     color: var(--colors-black-text, #222);
     text-align: center;
-    font-family: Nunito Sans;
-    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 1.2; /* 1.2rem */
     max-width: 920px;
 }
-.card-text{
-    text-align: center;
-    font-weight: 700;
-    line-height: 120%; /* 19.2px */
-    margin-top: 1em;
+.our-experts__container-2{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+/*     min-width: 100%; */
 }
-.card-img-top{
+.our-experts__expert-name{
+    text-align: center;
+    font-size:1em;
+    margin:5px;
+}
+.our-experts__img{
     max-width: 100%;
 }
-*{
-    outline:1px solid red;
-}
-.card-front {
+.our-experts__front-part {
     display: block;
     position: relative;
     max-width: 100%;
@@ -66,7 +51,7 @@
     padding: 0;
     cursor: pointer;
 }
-.card-text__block-back{
+.our-experts__back-part{
     display: block;
     position: absolute;
     max-width: 100%;
@@ -77,26 +62,32 @@
     padding: 1em;
     top: 0;
 }
-.card-folder .card-text__block-back {
+.our-experts__list-of-experts .our-experts__back-part{
     transform: rotateY(90deg);
 }
-.card-folder .card-text__block-back,
-.card-folder .card-front {
+.our-experts__list-of-experts .our-experts__back-part,
+.our-experts__list-of-experts .our-experts__front-part {
     transition: 1s;
 }
-.card-folder:hover .card-text__block-back {
+.our-experts__list-of-experts:hover .our-experts__back-part {
     transform: rotateY(0deg);
     transition-delay: 0.5s;
 }
-.card-folder:hover .card-front{
+.our-experts__list-of-experts:hover .our-experts__front-part{
     transform: rotateY(-90deg);
 }
-.card-folder {
+.our-experts__list-of-experts {
     display: block;
     position: relative;
     max-width: 100%;
     transition: 1s;
 }
+.our-experts__list-of-experts{
+    margin-right:15px;
+    margin-left:15px;
+}
+
+
 
 // @media screen and (min-width: 769px) and (max-width: 1023px) {
     
