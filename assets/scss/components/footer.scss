@@ -1,4 +1,4 @@
-.container_k{
+.footer{
     flex-shrink: 0;
     min-height: 35rem;
     background-color:rgb(242, 242, 242);
@@ -7,16 +7,16 @@
     flex-wrap: nowrap;
 }
 
-.footer_top{
+.footer__top{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem;
+    padding: 32px;
      
 }
 
-.footer_title{
+.footer__title{
     font-family: "Asket Extended";
     font-size: 2.5rem;
     font-style: normal;
@@ -26,41 +26,43 @@
     max-width: 50rem;
     
   }
-.footer_bottom{
+.footer__bottom{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+    padding: 64px;
+    align-items: center;
     justify-items: center;
-    padding: 4rem;
 
 }
-.footer_contact{
+.footer__contact{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
     flex-wrap: wrap;
 
 }
-.footer_menu{
+.footer__contact-item{
+    display: flex;
+    align-items: center;
+}
+.footer__menu{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
     flex-wrap: wrap;
 }
-.footer_logo{
+.footer__logo{
     width: 200px;
 }
-.footer_contact_logo{
+.icon{
     width: 30px;
     margin: 10px;
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 2px;
-    background-color: $royal_blue;
 }
-.footer_contact_logo:hover{
-    background-color: $golden;
-}
-.footer_link{
+
+.footer__link{
     text-decoration: none;
     font-family: "Asket Extended";
     font-size: 1,6rem;
@@ -68,61 +70,64 @@
     font-weight: 700;
     line-height: 120%;
     color:$royal_blue;
+    text-align: center;
 
 }
-.footer_link:hover{
+.footer__link:hover{
     color:$golden;
 }
 
-.footer_foto{
-    width: 4rem;
-height: 4rem;
-border-radius: 6.25rem;
+.foto{
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
 }
-.footer_foto_title{
+.questions__title-caption{
     font-family: "Asket Extended";
+    color: $royal_blue;
 }
 .btn{
     display: inline-block; 
-    background: #2f3788;
-    color: white; 
-    padding: 1rem 2.6rem; 
+    background: $royal_blue;
+    color: $white; 
+    padding: 16px 41.6px; 
     text-decoration: none; 
     border-radius: 3px;
-    
 
 }
 .btn:hover{
     color: $golden;
     border: 1px solid $golden;
 }
-.footer_questions{
+.footer__questions{
     display: flex;
    flex-direction: column;
    
-
-
 }
-.footer_questions_foto{
+.questions__title{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: start;
     font-family: "Asket Extended";
 }
-.footer_questions_fototitle{
+.questions__title-foto{
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 10px;
 }
-.footer_section{
-   color:#002366;
+.questions_description{
+    font-family: "Asket Extended";
+    font-size: 13px;
+}
+.footer__bottom-section{
+   color:$royal_blue;
    font-family: "Asket Extended";
 }
-.line{
+.footer__line{
     width: 100%;
-    height: 0.0625rem;
-    opacity: 0.2;
+    height: 1px;
+    opacity: 0.5;
 background: $golden;
 }
 
@@ -137,9 +142,9 @@ background: $golden;
         display: flex;
         justify-items: center;
         align-items: center;
-        padding: 4rem;
+        padding: 64px;
         flex-grow: 1;
-        gap: 1rem;
+        gap: 16px;
     }
     .footer_menu{
         display: none;
@@ -148,7 +153,7 @@ background: $golden;
         display: none;
     }
     .footer_contact{
-        gap: 2rem;
+        gap: 32px;
     }
     
 }
@@ -183,7 +188,7 @@ background: $golden;
         max-width: 80%;
     }
     .footer_title{
-        font-size: 2rem;
+        font-size: 32px;
     }
     .footer_bottom{
         display: flex;

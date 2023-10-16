@@ -684,86 +684,93 @@
 
     <!-- Конец блока Новости - Екатерины -->
     <!--Начало блока Ксюши-->
-    <footer class="container_k">
-      <div class="footer_top">
+    <footer class="footer">
+      <div class="footer__top">
         <div>
-          <img src="assets/icons/logo.svg" alt="логотип" class="footer_logo" />
+          <img src="assets/icons/logo.svg" alt="логотип" class="footer__logo" />
         </div>
-        <p class="footer_title">Центр экспертиз и просвещения</p>
+        <p class="footer__title">Центр экспертиз и просвещения</p>
       </div>
-      <div class="line"></div>
-      <div class="footer_bottom">
-        <div class="footer_contact">
-          <div>
-            <img
-              src="./assets/images/icons8-email-64.png"
-              alt="почта"
-              class="footer_contact_logo"
-            /><a class="footer_link" href="mailto:center_expertise_nn@mail.ru"
+      <div class="footer__line"></div>
+      <div class="footer__bottom">
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <object
+              data="./assets/icons/email.svg"
+              type="image/svg+xml"
+              class="icon"
+            ></object>
+            <a
+              class="footer__link"
+              href="mailto:center_expertise_nn@mail.ru"
+              target="_blank"
               >center_expertise_nn@mail.ru</a
             >
           </div>
-          <div>
-            <img
-              src="./assets/images/icons8-phone-50.png"
-              alt="телефон"
-              class="footer_contact_logo"
-            /><a class="footer_link" href="tel:+79519165754"
-              >+7(951)916-57-54</a
-            >
+          <div class="footer__contact-item">
+            <object
+              data="./assets/icons/phone.svg"
+              type="image/svg+xml"
+              class="icon"
+            ></object>
+            <a class="footer__link" href="tel:+79519165754">+7(951)916-57-54</a>
           </div>
-          <div>
-            <img
-              src="./assets/images/icons8-vk-50.png"
-              alt="вконтакте"
-              class="footer_contact_logo"
-            /><a class="footer_link" href="https://vk.com/center_expertise"
+          <div class="footer__contact-item">
+            <object
+              data="./assets/icons/vk.svg"
+              type="image/svg+xml"
+              class="icon"
+            ></object>
+            <a
+              class="footer__link"
+              href="https://vk.com/center_expertise"
+              target="_blank"
               >Вконтакте</a
             >
           </div>
         </div>
         <nav>
-          <ul class="footer_menu">
-            <li><a class="footer_link" href="#home">ГЛАВНАЯ</a></li>
-            <li><a class="footer_link" href="#srvices">УСЛУГИ</a></li>
-            <li><a class="footer_link" href="#experts">ЭКСПЕРТЫ</a></li>
-            <li><a class="footer_link" href="#article">СТАТЬИ</a></li>
-            <li><a class="footer_link" href="#news">НОВОСТИ</a></li>
+          <ul class="footer__menu">
+            <li><a class="footer__link" href="#home">ГЛАВНАЯ</a></li>
+            <li><a class="footer__link" href="#srvices">УСЛУГИ</a></li>
+            <li><a class="footer__link" href="#experts">ЭКСПЕРТЫ</a></li>
+            <li><a class="footer__link" href="#article">СТАТЬИ</a></li>
+            <li><a class="footer__link" href="#news">НОВОСТИ</a></li>
           </ul>
         </nav>
         <div>
-          <div class="footer_questions">
-            <div class="footer_questions_foto">
-              <div class="footer_questions_fototitle">
+          <div class="footer__questions">
+            <div class="questions__title">
+              <div class="questions__title-foto">
                 <div>
                   <img
                     src="./assets/images/T1v5IK_YUwQ.jpg"
                     alt="Александр"
-                    class="footer_foto"
+                    class="foto"
                   />
                 </div>
-                <p class="footer_foto_title">
+                <p class="questions__title-caption">
                   Лаврентьев Александр Рудольфович
                 </p>
               </div>
-              <p>
+              <p class="questions_description">
                 Руководитель Автономной некоммерческой организации Центр
                 правового просвещения и экспертного сопровождения публичного
                 управления
               </p>
             </div>
             <div>
-              <a href="mailto:center_expertise_nn@mail.ru" class="btn"
+              <a
+                href="mailto:center_expertise_nn@mail.ru"
+                target="_blank"
+                class="btn"
                 >Вопросы и предложения</a
               >
             </div>
           </div>
         </div>
       </div>
-      <div class="footer_section">
-        <p>Все права защищены</p>
-        <p></p>
-      </div>
+      <p class="footer__bottom-section">Все права защищены</p>
     </footer>
     <!--Конец блока Ксюши-->
     <!-- Подключение JS файла Bootstrap -->
