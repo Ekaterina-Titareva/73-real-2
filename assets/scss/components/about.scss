@@ -1,0 +1,82 @@
+.container_about {
+    background: #F7F7F7;
+    // border: 2px solid blue;
+}
+.about_company {
+    min-width: 60%;
+    margin: 0 auto;
+    // min-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    background: #F7F7F7;
+    // border: 2px solid rgb(229, 255, 58);
+    gap: 10px;
+}
+.about_company_header {
+    grid-area: 1/1/2/3;
+    color: var(--colors-black-text, #222);
+    font-family: Nunito Sans;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 2.625rem */
+    text-transform: uppercase;
+    text-align: center;
+    // border: 2px solid red;
+}
+.about_company_text {
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    // border: 2px solid green;
+
+    .company_profile,
+    .company_ogrn,
+    .company_address {
+    width: 90%;
+    margin-right: 5%;
+    overflow-wrap: break-word;
+    color: var(--colors-black-text, #222);
+    text-align: left;
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.2rem */
+    // height: 2.375rem;
+    // border: 2px solid red;
+    }
+}
+
+.about_company_foto {
+    grid-area: 2/2/3/3;
+    // border: 2px solid rgb(0, 9, 1);
+.about_foto {
+    width: 70%;
+    margin: 3% 0 0 3%;
+    box-shadow: 10px 10px 10px #B07C4B;
+    transition: 1s; /* Время эффекта */
+} 
+.about_foto:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+}
+
+.button_wrap {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    grid-area: 3/1/4/3;
+    // margin-bottom: 6.5rem;
+    // border: 2px solid purple;
+    .btn_history,
+    .btn_info {
+        margin: 20px;
+        // border: 2px solid greenyellow;
+    }
+}
