@@ -84,6 +84,10 @@ button {
     margin-bottom: 6.5rem;
 }
 
+ .cards-wrapper{
+    display: flex;
+ }
+
 @media screen and (min-width: 1024px) {
     #carouselExampleDark{
         display: none;
@@ -91,8 +95,10 @@ button {
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
     .card-columns{
-        display: none;
+     
+       display: none;
     }
+    
     .textservices{
         color: $golden;
     text-align: center;
@@ -104,23 +110,8 @@ button {
     width: 35rem;
     height: 2.375rem;
     }
-    .experts {
-        height: 160rem;
-    flex-shrink: 0;
-    background: #F7F7F7;
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-    }
-    .list__of__experts{
-        
-    height: 160rem;
     
-    display: list-item;
-    gap: 2rem;
     
-    }
 }
 @media screen and (max-width: 768px) {
     .card-columns {
@@ -137,36 +128,9 @@ button {
     width: 15rem;
     height: 2.375rem;
     }
-    .carousel-control-prev {
-        margin-left: 4rem;
-        margin-top: 19rem;
-    position: absolute;
-    }
-    .carousel-control-next {
-        margin-right: 4rem;
-        margin-top: 19rem;
-        position: absolute;
     
-    }
-    .card {
-        position: relative;
-    }
-    .experts {
-        height: 160rem;
-    flex-shrink: 0;
-    background: #F7F7F7;
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-    }
-    .list__of__experts{
-        
-    height: 160rem;
     
-    display: list-item;
-    gap: 2rem;
+
     
-    }
     
 }
