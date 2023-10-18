@@ -3,7 +3,7 @@
 }
 .our-experts{
     padding: 80px;
-    max-width: 1350px;
+    // max-width: 1350px;
     margin: 0 auto;
     background: #F7F7F7;
 }
@@ -49,7 +49,7 @@
     // margin:5px;
 }
 .our-experts__img{
-    max-width: 100%;
+    width: 100%;
 }
 .our-experts__front-part {
     display: block;
@@ -60,17 +60,38 @@
     cursor: pointer;
 }
 .our-experts__back-part{
-    display: block;
+    // display: block;
     position: absolute;
-    max-width: 100%;
-    max-height: 100%;
+    width:100%;
+    height:100%;
     background-color:#fff;
     text-align: center;
-    font-size:0.9em;
-    padding: 1em;
     top: 0;
-    
+    left: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
+.our-experts__back-expertName {
+    font-size: 1em;
+    font-weight: 700;
+}
+.our-experts__back-text {
+    max-width: 265px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.our-experts__experience {
+    font-size: 1em;
+    font-weight: 600;
+}
+.our-experts__back-expertName,.our-experts__back-text,.our-experts__experience{
+    font-style: normal;
+    line-height: 120%; 
+    box-sizing: border-box;
+}
+
 .our-experts__list-of-experts .our-experts__back-part{
     transform: rotateY(90deg);
 }
@@ -93,45 +114,3 @@
     background-color: #FFFFFF;
 }
 
-
-// @media screen and (min-width: 769px) and (max-width: 1023px) {
-    
-//     .experts {
-//         height: 160rem;
-//     flex-shrink: 0;
-//     background: #F7F7F7;
-//     display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         gap: 3rem;
-//     }
-//     .list__of__experts{
-        
-//     height: 160rem;
-    
-//     display: list-item;
-//     gap: 2rem;
-    
-//     }
-// }
-// @media screen and (max-width: 768px) {
-    
-//     .experts {
-//         height: 160rem;
-//     flex-shrink: 0;
-//     background: #F7F7F7;
-//     display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         gap: 3rem;
-//     }
-//     .list__of__experts{
-        
-//     height: 160rem;
-    
-//     display: list-item;
-//     gap: 2rem;
-    
-//     }
-    
-// }
