@@ -1,15 +1,21 @@
 *{
     outline:1px solid red;
 }
+.our-experts{
+    padding: 80px;
+    max-width: 1350px;
+    margin: 0 auto;
+    background: #F7F7F7;
+}
 .our-experts__container-1{
     min-width: 100%;
-    margin: 0 auto;
 }
 .our-experts__head {
-    background: #F7F7F7;
+    // background: #F7F7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 34px;
 }
 .our-experts__title{
     color: #2f3788;
@@ -33,12 +39,14 @@
     justify-content: space-around;
     margin: 0;
     padding: 0;
-/*     min-width: 100%; */
+    min-width: 100%; 
 }
 .our-experts__expert-name{
     text-align: center;
     font-size:1em;
-    margin:5px;
+    font-weight: 700;
+    line-height: 120%;
+    // margin:5px;
 }
 .our-experts__img{
     max-width: 100%;
@@ -61,6 +69,7 @@
     font-size:0.9em;
     padding: 1em;
     top: 0;
+    
 }
 .our-experts__list-of-experts .our-experts__back-part{
     transform: rotateY(90deg);
@@ -79,14 +88,10 @@
 .our-experts__list-of-experts {
     display: block;
     position: relative;
-    max-width: 100%;
+    width: 20%;
     transition: 1s;
+    background-color: #FFFFFF;
 }
-.our-experts__list-of-experts{
-    margin-right:15px;
-    margin-left:15px;
-}
-
 
 
 // @media screen and (min-width: 769px) and (max-width: 1023px) {
