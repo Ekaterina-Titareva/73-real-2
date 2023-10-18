@@ -17,13 +17,13 @@
 }
 
 .footer__title{
-    font-family: "Asket Extended";
+    font-family: "Asket Extended", Arial, sans-serif;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
     color:$golden;
-    max-width: 50rem;
+   
     
   }
 .footer__bottom{
@@ -39,6 +39,7 @@
     flex-direction: column;
     gap: 16px;
     flex-wrap: wrap;
+    margin: 5px;
 
 }
 .footer__contact-item{
@@ -52,7 +53,7 @@
     flex-wrap: wrap;
 }
 .footer__logo{
-    width: 200px;
+    max-width: 200px;
 }
 .icon{
     width: 30px;
@@ -64,7 +65,7 @@
 
 .footer__link{
     text-decoration: none;
-    font-family: "Asket Extended";
+    font-family: "Asket Extended", Arial, sans-serif;
     font-size: 1,6rem;
     font-style: normal;
     font-weight: 700;
@@ -83,14 +84,20 @@
     border-radius: 100px;
 }
 .questions__title-caption{
-    font-family: "Asket Extended";
+    font-family: "Asket Extended", Arial, sans-serif;
     color: $royal_blue;
+    margin: 0;
+}
+.leader{
+    margin: 0;
+    color: $black;
+    font-size: 0.9rem;
 }
 .btn{
     display: inline-block; 
     background: $royal_blue;
     color: $white; 
-    padding: 16px 41.6px; 
+    padding: 14px; 
     text-decoration: none; 
     border-radius: 3px;
 
@@ -109,7 +116,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: start;
-    font-family: "Asket Extended";
+    font-family: "Asket Extended", Arial, sans-serif;
 }
 .questions__title-foto{
     display: flex;
@@ -117,12 +124,15 @@
     gap: 10px;
 }
 .questions__description{
-    font-family: "Asket Extended";
-    font-size: 13px;
+    font-family: "Asket Extended", Arial, sans-serif;
+    font-size: 1rem;
+    color: $royal_blue;
 }
+
 .footer__bottom-section{
    color:$royal_blue;
-   font-family: "Asket Extended";
+   font-family: "Asket Extended", Arial, sans-serif;
+   max-width: 90%;
 }
 .footer__line{
     width: 100%;
@@ -131,50 +141,62 @@
 background: $golden;
 }
 
+
 @media screen and (max-width: 1023px){
 
-    .footer_top{
+    .footer__top{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     }
-    .footer_bottom{
+    .footer__bottom{
         display: flex;
         justify-items: center;
+        justify-content: space-around;
         align-items: center;
         padding: 64px;
         flex-grow: 1;
         gap: 16px;
     }
-    .footer_menu{
+    .footer__menu{
         display: none;
     }
-    .footer_contact_logo{
-        display: none;
-    }
-    .footer_contact{
+   
+    .footer__contact{
         gap: 32px;
+        
+    }
+    .footer__contact-item{
+        max-width: 90%;
+    }
+
+    .icon{
+        padding: 0;
+
     }
     
 }
 @media screen and (max-width: 991px){
-    .footer_bottom{
+    .footer__bottom{
         display: flex;
-        flex-direction:column;
-        align-items: flex-start;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
         padding: 0;
-        max-width: 80%;
+        max-width: 90%;
+        gap:40px;
 
     }
-    .footer_top{
+    .footer__top{
         padding: 0;
         max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
-    .footer_contact_logo{
-        display: block;
-    }
-    .footer_questions{
+    
+    .footer__questions{
         display: flex;
        flex-direction: column;
        align-items: start;
@@ -183,33 +205,53 @@ background: $golden;
     }
 }
 @media screen and (max-width: 575px){
-    .footer_top{
+    .footer{
+        padding: 10px;
+    }
+    .footer__top{
         padding: 0;
         max-width: 80%;
     }
-    .footer_title{
+    .footer__title{
         font-size: 32px;
     }
-    .footer_bottom{
+    .footer__bottom{
         display: flex;
         flex-direction:column;
         padding: 0;
         max-width: 80%;
+        align-items: flex-start;
 
     }
-    .footer_questions{
+    .footer__questions{
         display: flex;
        flex-direction: column;
        align-items: start;
        max-width: 80%;
     
     }
-    .footer_foto{
+    .footer__logo{
+       display: none;
+    }
+   
+
+    
+}
+@media screen and (max-width:574px){
+    .icon{
         display: none;
     }
-    .footer_foto_title{
-        display: none;
+    .footer__bottom{
+        gap:15px;
+        justify-content: center;
+    }
+    .footer__contact-item{
+        max-width: 90%;
+    }
+    .footer__contact{
+        margin: 15px;
     }
 
     
 }
+
