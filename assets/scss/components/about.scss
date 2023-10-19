@@ -39,7 +39,7 @@
         width: minmax;
         margin: 3% 0% 3% 0;
         // box-shadow: 1vw 1vw 1vw #B07C4B;
-        border-bottom: 1px solid rgb(141, 38, 141);
+        border-bottom: 1px solid $royal_blue;
         overflow-wrap: break-word;
         color: var(--colors-black-text, #222);
         text-align: left;
@@ -127,7 +127,7 @@
         .company_address {
             width: 80%;
             margin: 3% 5% 3% 0;
-            border-bottom: 1px solid rgb(141, 38, 141);
+            border-bottom: 1px solid $royal_blue;
             // box-shadow: 1vw 1vw 1vw #B07C4B;
         overflow-wrap: break-word;
         color: var(--colors-black-text, #222);
