@@ -1,5 +1,5 @@
 .news {
-  padding: 150px 0;
+  padding: 100px 0;
   margin: 0;
   min-width: 280px;
   min-height: 100%;
@@ -40,7 +40,7 @@
   height: 100%;
   gap: 20px;
 }
-  
+
 .news__item-link {
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@
 .news__date {
   font-weight: 700;
   font-size: 13px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin-bottom: 15px;
   display: inline-block;
   color: $royal_blue;
