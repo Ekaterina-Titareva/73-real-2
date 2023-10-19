@@ -1,9 +1,5 @@
-*{
-    outline:1px solid red;
-}
 .our-experts{
     padding: 80px;
-    // max-width: 1350px;
     margin: 0 auto;
     background: #F7F7F7;
 }
@@ -11,7 +7,6 @@
     min-width: 100%;
 }
 .our-experts__head {
-    // background: #F7F7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +17,7 @@
     font-size:1.75rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 1.5; /* 2.625rem */
+    line-height: 1.5; 
     text-transform: uppercase;
 }
 .our-experts__text{
@@ -31,7 +26,7 @@
     font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.2; /* 1.2rem */
+    line-height: 1.2;
     max-width: 920px;
 }
 .our-experts__container-2{
@@ -46,7 +41,6 @@
     font-size:1em;
     font-weight: 700;
     line-height: 120%;
-    // margin:5px;
 }
 .our-experts__img{
     width: 100%;
@@ -60,7 +54,6 @@
     cursor: pointer;
 }
 .our-experts__back-part{
-    // display: block;
     position: absolute;
     width:100%;
     height:100%;
@@ -114,27 +107,108 @@
     transition: 1s;
     background-color: #FFFFFF;
 }
+.our-experts__container-carousel{
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1360px; 
+}
+.our-experts__list-of-experts-2{
+    display: block;
+    position: relative;
+    width: 35%;
+    transition: 1s;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+.our-experts__list-of-experts-2 .our-experts__back-part{
+    transform: rotateY(90deg);
+}
+.our-experts__list-of-experts-2 .our-experts__back-part,
+.our-experts__list-of-experts-2 .our-experts__front-part {
+    transition: 1s;
+}
+.our-experts__list-of-experts-2:hover .our-experts__back-part {
+    transform: rotateY(0deg);
+    transition-delay: 0.5s;
+}
+.our-experts__list-of-experts-2:hover .our-experts__front-part{
+    transform: rotateY(-90deg);
+}
 
-@media (max-width:1300px){
-    .our-experts__back-expertName, .our-experts__experience {
-        font-size: 0.9em;
-    }
-    .our-experts__back-text {
-        font-size: 0.7em;
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    .our-experts__container-carousel{
+        display: none;
     }
 }
-@media (max-width:1024px){
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     .our-experts__container-2{
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
-    .our-experts__list-of-experts {
-        width: 35%;
+    #carouselExampleSlidesOnly{
+        width: 100%;
     }
-    .our-experts__back-expertName, .our-experts__experience {
-        font-size: 1em;
+    .our-experts__expert-name,.our-experts__experience, .our-experts__back-expertName{
+        font-size:1.5em;
     }
     .our-experts__back-text {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:769px ) and (max-width: 1024px) {
+    .our-experts__container-2{
+        display: none;
+    }
+    #carouselExampleSlidesOnly{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 769px) {
+    .our-experts__container-2{
+        display: none;
+    }
+    #carouselExampleSlidesOnly{
+        width: 100%;
+    }
+    .our-experts__expert-name{
+        font-size: 1em;
+    }
+    .our-experts__experience, .our-experts__back-expertName{
+        font-size:0.8em;
+    }
+    .our-experts__back-text {
+        font-size: 0.6em;
+    }
+    .our-experts__title{
+        font-size:1.25em;
+    }
+    .our-experts__text{
         font-size: 0.8em;
+    }
+    .our-experts__list-of-experts-2{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .our-experts__container-2{
+        display: none;
+    }
+    #carouselExampleSlidesOnly{
+        width: 100%;
+    }
+    .our-experts__experience, .our-experts__back-expertName{
+        font-size:0.8em;
+    }
+    .our-experts__back-text {
+        font-size: 0.6em;
+    }
+    .our-experts__title{
+        font-size:1em;
+    }
+    .our-experts__text{
+        font-size: 0.6em;
+    }
+    .our-experts__list-of-experts-2{
+        width: 100%;
     }
 }
