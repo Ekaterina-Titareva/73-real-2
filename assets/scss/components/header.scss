@@ -1,81 +1,223 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 .header {
-  background-image: url(../images/glavnoe.jpg);
-  background-repeat: no-repeat;
-  max-width: 100%;
-  min-height: 100vh;
+  display: flex;
+  background-image: url(../images/men-unsplash.jpg);
+  background-position: center;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.fon {
-  position: absolute;
-  max-width: 100%;
-  height: 11rem;
-  background-color: $shadow;
-}
-.logo {
-  position: absolute;
-  width: 13rem;
-  height: 8rem;
-}
-
-.header_menu {
-  position: absolute;
-  top: 20px; /* Расположение сверху */
-  left: 20px; /* Расположение слева */
-  padding: 10px 20px; /* Отступы вокруг меню */
-  border-radius: 5px;
-  display: inline-flex;
-  align-items: flex-start;
-  top: 2rem;
-  gap:2rem;
-  left: 42rem;
-}
-.header_menu_link {
-  color: $black;
-  font-family: "Asket Extended";
-  font-size: 1.1rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  text-decoration: none;
-}
-.center-g {
-  position: absolute;
-  color: $black;
-  font-family: "Asket Extended";
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight:900;
-  top: 1.9rem;
-  left: 11rem;
-}
-.ano-center {
-  color: $black;
-  text-align: center;
-  font-family: "Asket Extended";
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 120%; /* 1.5rem */
-  position: absolute;
-  top:23rem;
-}
-.kvadrat {
-  width: 63rem;
-  height: 7rem;
-  display: inline-flex;
-  padding: 0.25rem 0.5rem;
-  align-items: center;
-  gap: 0.625rem;
-  border-radius: 0.25rem 0rem 0rem 0.25rem;
-  background-color:rgba(240, 248, 255, 0.705);
-  border-radius: 10px 100px / 120px;
-  position: absolute;
-  top: 22rem;
-  left: 10rem;
-}
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  }
+  
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header__up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(95, 82, 82, 0.521);
+    margin-bottom: 15%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .header__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .header__logo-img{
+    max-width: 80px;
+    max-height: 80px;
+  }
+  
+  .header__logo-title {
+    color: $white;
+    text-shadow:  5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Asket Extended", Arial, sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight:1000;
+    max-width: 70%;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .header__nav_items {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    min-width: 510px;
+  }
+  
+  .header__button {
+    display: flex;
+    padding: 0.6rem 1.3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .header__burger {
+    display: none;
+  }
+  
+  .header__title {
+    color: $white;
+    background-color: rgba(255, 255, 255, 0.205);
+    opacity: 0.9;
+    border-radius: 0.9375em;
+    width: 80%;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.748);
+    font-size: 2.5em;
+    line-height: 120%;
+    transition: all 0.5s ease; 
+    padding: 10px;
+  }
+  
+  .burger-menu__item {
+    color: white;
+  }
+  
+  @media screen and (max-width: 970px) {
+    .header__nav {
+      display: none;
+    }
+  
+    .header__button {
+      display: none;
+    }
+  
+    .header__burger {
+      display: block;
+      position: absolute;
+      right: 0.9rem;
+      z-index: 1;
+      user-select: none;
+      margin: 10px;
+    }
+  
+    .header__burger ul {
+      padding: 0;
+    }
+  
+    .header__burger a:hover {
+      text-decoration: underline;
+    }
+  
+    .header__burger a::before {
+      content: ">";
+      padding-right: 0.44rem;
+    }
+  
+    .header__burger_checkbox {
+      display: block;
+      width: 2.2rem;
+      height: 2rem;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      -webkit-touch-callout: none;
+    }
+  
+    .header__burger_checkbox:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #ffffff;
+    }
+  
+    .header__burger_checkbox:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+  
+    .header__burger_line {
+      display: block;
+      width: 1.8rem;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: $royal_blue;
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    }
+  
+    .header__burger_line:first-child {
+      transform-origin: 0% 0%;
+    }
+  
+    .header__burger_line:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+  
+    .header__burger_checkbox:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+    }
+  
+    .header__burger_checkbox:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+  
+    .header__burger_checkbox:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+  
+    .header__burger_menu {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: -100%;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 4.45rem 0;
+      list-style: none;
+      background-color: $royal_blue;
+      transition-duration: 0.5s;
+    }
+  
+    .header__burger_menu > li {
+      margin: 1.7rem;
+    }
+    .header__burger_checkbox:checked ~ .header__burger_menu {
+      visibility: visible;
+      left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+  .header__logo-title {
+  display: none;
+  }
+  
+  .header__title {
+    font-size: 1em;
+  }
+  
+  .header__up {
+    margin-bottom: 80%;
+  }
+  }
