@@ -80,7 +80,7 @@ hr {
 }
 
 .container_carousel {
-width: 80vw;
+width: 85vw;
 }
 button {
     margin-bottom: 6.5rem;
@@ -94,9 +94,7 @@ button {
     width: 80vw;
     box-shadow: none;
 }
-.block_s:hover{
-    width: 100%;
-}
+
 @media screen and (min-width: 1440px) {
     .container_carousel {
         display: none;
@@ -163,5 +161,6 @@ button {
     .block_n{
         display: none;
     }
+    
     
 }

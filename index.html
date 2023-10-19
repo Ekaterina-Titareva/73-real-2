@@ -10,49 +10,56 @@
   </head>
 
   <body>
-  <!-- Начало блока header-->
-  <header class="header">
-    <div class="header__container">
-      <div class="header__up">
-        <div class="header__logo">
-          <img src="./assets/icons/logo-new.svg" alt="logo" class="header__logo-img" />
-          <p class="header__logo-title">Центр экспертиз и просвещения</p>
+    <!-- Начало блока header-->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__up">
+          <div class="header__logo">
+            <img
+              src="./assets/icons/logo-new.svg"
+              alt="logo"
+              class="header__logo-img"
+            />
+            <p class="header__logo-title">Центр экспертиз и просвещения</p>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav_items">
+              <li><a class="item_g" href="#about">О компании</a></li>
+              <li><a class="item_g" href="#services">Услуги</a></li>
+              <li><a class="item_g" href="#experts">Эксперты</a></li>
+              <li><a class="item_g" href="#article">Статьи</a></li>
+              <li><a class="item_g" href="#news">Новости</a></li>
+              <li><a class="item_g" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <nav class="header__burger">
+            <input type="checkbox" class="header__burger_checkbox" />
+            <span class="header__burger_line"></span>
+            <span class="header__burger_line"></span>
+            <span class="header__burger_line"></span>
+            <ul class="header__burger_menu">
+              <li><a class="burger-menu__item" href="#about">О компании</a></li>
+              <li><a class="burger-menu__item" href="#services">Услуги</a></li>
+              <li><a class="burger-menu__item" href="#experts">Эксперты</a></li>
+              <li><a class="burger-menu__item" href="#article">Статьи</a></li>
+              <li><a class="burger-menu__item" href="#news">Новости</a></li>
+              <li>
+                <a class="burger-menu__item" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__nav">
-          <ul class="header__nav_items">
-            <li><a class="item_g" href="#about">О компании</a></li>
-            <li><a class="item_g" href="#services">Услуги</a></li>
-            <li><a class="item_g" href="#experts">Эксперты</a></li>
-            <li><a class="item_g" href="#article">Статьи</a></li>
-            <li><a class="item_g"href="#news">Новости</a></li>
-            <li><a class="item_g"href="#contacts">Контакты</a></li>
-          </ul>
-        </nav>
-        <nav class="header__burger">
-          <input type="checkbox" class="header__burger_checkbox" />
-          <span class="header__burger_line"></span>
-          <span class="header__burger_line"></span>
-          <span class="header__burger_line"></span>
-          <ul class="header__burger_menu">
-            <li><a class="burger-menu__item" href="#about">О компании</a></li>
-            <li><a class="burger-menu__item" href="#services">Услуги</a></li>
-            <li><a class="burger-menu__item" href="#experts">Эксперты</a></li>
-            <li><a class="burger-menu__item" href="#article">Статьи</a></li>
-            <li><a class="burger-menu__item" href="#news">Новости</a></li>
-            <li><a class="burger-menu__item" href="#contacts">Контакты</a></li>
-          </ul>
-        </nav>
+        <h1 class="header__title">
+          Центр правового просвещения и экспертного сопровождения публичного
+          управления
+        </h1>
       </div>
-      <h1 class="header__title">
-        Центр правового просвещения и экспертного сопровождения публичного
-        управления
-      </h1>
-    </div>
-  </header>
-  <!-- Конец блока header -->
+    </header>
+    <!-- Конец блока header -->
     <!--Начало блока Услуги - София-->
     <div class="services" id="services">
       <div class="ourservices"><h2>Наша деятельность</h2></div>
+
       <div class="textservices">
         "Как приятно знать, что ты что-то узнал!" Мольер
       </div>
@@ -112,7 +119,7 @@
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active service_item">
                 <div class="block_service block_s">
                   <div class="service_img">
                     <img src="./assets/icons/agreement.png" alt="image" />
@@ -130,7 +137,7 @@
                   <hr />
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item service_item">
                 <div class="block_service block_s">
                   <div class="service_img">
                     <img src="./assets/icons/agreement.png" alt="image" />
@@ -145,7 +152,7 @@
                   <hr />
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item service_item">
                 <div class="block_service block_s">
                   <div class="service_img">
                     <img src="./assets/icons/agreement.png" alt="image" />
