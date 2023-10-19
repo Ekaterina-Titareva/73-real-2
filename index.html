@@ -10,46 +10,46 @@
   </head>
 
   <body>
-    <!--Начало блока Гульназ-->
-    <header class="header">
-      <div class="header__container">
-        <div class="header__up">
-          <div class="header__logo">
-            <img src="./assets/icons/logo-new.svg" alt="logo" class="header__logo-img" />
-            <p class="header__logo-title">Центр экспертиз и просвещения</p>
-          </div>
-          <nav class="header__nav">
-            <ul class="header__nav_items">
-              <li><a class="item_g" href="#about">О компании</a></li>
-              <li><a class="item_g" href="#services">Услуги</a></li>
-              <li><a class="item_g" href="#experts">Эксперты</a></li>
-              <li><a class="item_g" href="#article">Статьи</a></li>
-              <li><a class="item_g" href="#news">Новости</a></li>
-              <li><a class="item_g" 0href="#contacts">Контакты</a></li>
-            </ul>
-          </nav>
-          <nav class="header__burger">
-            <input type="checkbox" class="header__burger_checkbox" />
-            <span class="header__burger_line"></span>
-            <span class="header__burger_line"></span>
-            <span class="header__burger_line"></span>
-            <ul class="header__burger_menu">
-              <li><a class="burger-menu__item" href="#about">О компании</a></li>
-              <li><a class="burger-menu__item" href="#services">Услуги</a></li>
-              <li><a class="burger-menu__item" href="#experts">Эксперты</a></li>
-              <li><a class="burger-menu__item" href="#article">Статьи</a></li>
-              <li><a class="burger-menu__item" href="#news">Новости</a></li>
-              <li><a class="burger-menu__item" href="#contacts">Контакты</a></li>
-            </ul>
-          </nav>
+  <!-- Начало блока header-->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__up">
+        <div class="header__logo">
+          <img src="./assets/icons/logo-new.svg" alt="logo" class="header__logo-img" />
+          <p class="header__logo-title">Центр экспертиз и просвещения</p>
         </div>
-        <h1 class="header__title">
-          Центр правового просвещения и экспертного сопровождения публичного
-          управления
-        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav_items">
+            <li><a class="item_g" href="#about">О компании</a></li>
+            <li><a class="item_g" href="#services">Услуги</a></li>
+            <li><a class="item_g" href="#experts">Эксперты</a></li>
+            <li><a class="item_g" href="#article">Статьи</a></li>
+            <li><a class="item_g"href="#news">Новости</a></li>
+            <li><a class="item_g"href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="header__burger">
+          <input type="checkbox" class="header__burger_checkbox" />
+          <span class="header__burger_line"></span>
+          <span class="header__burger_line"></span>
+          <span class="header__burger_line"></span>
+          <ul class="header__burger_menu">
+            <li><a class="burger-menu__item" href="#about">О компании</a></li>
+            <li><a class="burger-menu__item" href="#services">Услуги</a></li>
+            <li><a class="burger-menu__item" href="#experts">Эксперты</a></li>
+            <li><a class="burger-menu__item" href="#article">Статьи</a></li>
+            <li><a class="burger-menu__item" href="#news">Новости</a></li>
+            <li><a class="burger-menu__item" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
-    <!--Конец блока Гульназ-->
+      <h1 class="header__title">
+        Центр правового просвещения и экспертного сопровождения публичного
+        управления
+      </h1>
+    </div>
+  </header>
+  <!-- Конец блока header -->
     <!--Начало блока Услуги - София-->
     <div class="services" id="services">
       <div class="ourservices"><h2>Наша деятельность</h2></div>
@@ -193,18 +193,16 @@
         </div>
         <div class="about_company_foto">
           <div class="container_about_foto">
-            <img class="about_foto" src="./assets/images/about-foto.jpg" />
+            <img
+              class="about_foto"
+              src="./assets/images/about-foto.jpg"
+              alt="about-foto"
+            />
           </div>
         </div>
         <div class="button_wrap">
-          <div class="btn_history">
-            <a href="#"><button type="button" class="btn">История</button></a>
-          </div>
-          <div class="btn_info">
-            <a href="#"
-              ><button type="button" class="btn">Информация</button></a
-            >
-          </div>
+          <a target="_blank" class="btn btn_history" href="#">История</a>
+          <a target="_blank" class="btn btn_info" href="#">Информация</a>
         </div>
       </div>
     </section>
@@ -273,7 +271,7 @@
           <p class="article_text">
             Здесь вы можете прочитать статьи, написанные нашими экспертами
           </p>
-          <div class="article_block">
+          <div class="article_block article_b">
             <div class="article_item">
               <img class="article_pic" src="./assets/images/article.png" />
               <div class="article_pic_title">
@@ -345,6 +343,96 @@
               </div>
             </div>
           </div>
+          <!--Начало блока статьи в адаптивной версии-->
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide article_slides"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner carousel_article">
+              <div class="carousel-item active">
+                <div class="article_item item_julia">
+                  <img class="article_pic" src="./assets/images/article.png" />
+                  <div class="article_pic_title">
+                    <a href="#"
+                      >Медиация и судебное примирение в правозащитном
+                      механизме</a
+                    >
+                  </div>
+                  <div class="article_time">28 сент. 2023 г.</div>
+                  <div class="article_content">
+                    Заявленный спектр выступлений широк и охватывает, наверное,
+                    все стороны этого института урегулирования споров. Я заявил
+                    тему "Медиация и судебное примирение в правозащитном
+                    механизме", поскольку уверен, медиация как один из возможных
+                    способов внесудебного урегулирования споров, что подтвердили
+                    все выступавшие на конференции, - далеко не популярен.
+                    Следовательно, важно признать - иностранный опыт заключения
+                    медиативных (название то какое?!) соглашений в России "не
+                    прижился", значит, пора признать неудачу и отказаться от
+                    этого института, тем более есть альтернативные способы
+                    мирного разрешения споров (правовая помощь, разветвленная
+                    система бесплатной юридической помощи, мировые соглашения,
+                    судебные примирители).
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="article_item item_julia">
+                  <img class="article_pic" src="./assets/images/article.png" />
+                  <div class="article_pic_title">
+                    <a href="#">Юбилей Конституции Российской Федерации</a>
+                  </div>
+                  <div class="article_time">24 сент. 2023 г.</div>
+                  <div class="article_content">
+                    На этой неделе завершил участие в проекте Поделись своим
+                    знанием! Тема лекции : Юбилей Конституции Российской
+                    Федерации. Не прогадал, оставив для последних лекций
+                    посещение школ Нижнего Новгорода! И если в 24 школе ребята
+                    были несколько скованы (вероятно первый урок, не
+                    проснулись), то в 40 лицее моя последняя в этом проекте,
+                    десятая по счету, лекция, по общим (и моим, и организатора
+                    от лицея - Андрея Смирнова, и активистов школы) впечатлениям
+                    удалась! Фото, мне представляется передают атмосферу. При
+                    том, что это была самая молодая аудитория (два 9 класса) и
+                    притом самая "далёкая" от моей темы - атомные классы.
+                    Впрочем, я слышал до занятия, что два педагога (физик и
+                    историк) "угрожали" нарушителям порядка 5 дополнительными
+                    задачами по физике и 3 - по истории... но уверен, этим
+                    талантливым ребятишкам и без угроз наш для них "птичий язык"
+                    юриспруденции оказался небезынтересен! Проект завершён, всем
+                    Спасибо! К Юбилею Конституции Российской Федерации готовы!
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="article_item item_julia">
+                  <img class="article_pic" src="./assets/images/article.png" />
+                  <div class="article_pic_title">
+                    <a href="#"
+                      >Научно-консультативный совет при Законодательном Собрании
+                      Нижегородской области: 10 лет экспертного
+                      соработничества</a
+                    >
+                  </div>
+                  <div class="article_time">24 сент. 2021 г.</div>
+                  <div class="article_content">
+                    Обобщение результатов экспертной работы выявило, что мы
+                    применяли нестандартные приёмы, комплексный анализ текста
+                    документа и практически ни разу заключение не было
+                    «формальным», всегда мы отмечали недостатки (от
+                    технико-юридических мелочей до системных), а в более чем
+                    половине заключений вывод был крайне неутешителен для
+                    инициатора: рекомендовать только при условии устранения
+                    недостатков и даже – не рекомендовать для рассмотрения
+                    соответствующим правотворческим органом. Чаще всего к нам
+                    прислушивались и экспертное мнение НКС было учтено.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Конец блока статьи в адаптивной версии-->
           <a href="https://vk.com/center_expertise" class="btn article__button"
             >Все статьи</a
           >
