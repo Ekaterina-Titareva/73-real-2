@@ -10,37 +10,46 @@
   </head>
 
   <body>
-    <!--Начало блока Гульназ-->
-    <header class="header" id="home">
-      <div class="container_g">
-        <div class="fon"></div>
-        <div class="kvadrat-two"></div>
-        <div class="header_logo">
-          <img class="logo" src="./assets/icons/logo.svg" alt="logo" />
+  <!-- Начало блока header-->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__up">
+        <div class="header__logo">
+          <img src="./assets/icons/logo-new.svg" alt="logo" class="header__logo-img" />
+          <p class="header__logo-title">Центр экспертиз и просвещения</p>
         </div>
-        <nav>
-          <ul class="header_menu">
-            <li><a class="header_menu_link" href="#services">Услуги</a></li>
-            <li><a class="header_menu_link" href="#about">О компании</a></li>
-            <li>
-              <a class="header_menu_link" href="#experts">Наши эксперты</a>
-            </li>
-            <li><a class="header_menu_link" href="#news">Новости</a></li>
-            <li><a class="header_menu_link" href="#contacts">Контакты</a></li>
+        <nav class="header__nav">
+          <ul class="header__nav_items">
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#experts">Эксперты</a></li>
+            <li><a href="#article">Статьи</a></li>
+            <li><a href="#news">Новости</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <div class="center">
-          <h1 class="center-g">Центр экспертиз и просвещения</h1>
-        </div>
+        <nav class="header__burger">
+          <input type="checkbox" class="header__burger_checkbox" />
+          <span class="header__burger_line"></span>
+          <span class="header__burger_line"></span>
+          <span class="header__burger_line"></span>
+          <ul class="header__burger_menu">
+            <li><a class="burger-menu__item" href="#about">О компании</a></li>
+            <li><a class="burger-menu__item" href="#services">Услуги</a></li>
+            <li><a class="burger-menu__item" href="#experts">Эксперты</a></li>
+            <li><a class="burger-menu__item" href="#article">Статьи</a></li>
+            <li><a class="burger-menu__item" href="#news">Новости</a></li>
+            <li><a class="burger-menu__item" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="kvadrat"></div>
-      <div class="ano-center">
+      <h1 class="header__title">
         Центр правового просвещения и экспертного сопровождения публичного
         управления
-      </div>
-    </header>
-
-    <!--Конец блока Гульназ-->
+      </h1>
+    </div>
+  </header>
+  <!-- Конец блока header -->
     <!--Начало блока Услуги - София-->
     <div class="services" id="services">
       <div class="ourservices"><h2>Наша деятельность</h2></div>
