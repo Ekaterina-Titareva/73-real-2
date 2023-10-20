@@ -44,9 +44,14 @@
 .news__item-link {
   display: flex;
   flex-direction: column;
-  height: 100%;
   max-width: 306px;
+  max-height: 500px;
   margin: 1rem auto;
+  padding: 5px;
+}
+
+.news__item-link:hover {
+  box-shadow: 1px 1px 1px 5px #2f368895;
 }
 
 .news__image {
@@ -90,7 +95,7 @@
   overflow: hidden;
 }
 
-.news__btn {
+.news-btn {
   width: 120px;
   height: 24px;
   margin: 1rem 0;
