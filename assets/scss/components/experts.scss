@@ -135,8 +135,10 @@
 .our-experts__list-of-experts-2:hover .our-experts__front-part{
     transform: rotateY(-90deg);
 }
-
-@media screen and (min-width: 1440px) and (max-width: 2560px) {
+*{
+    outline: 1px solid red;
+}
+@media screen and (min-width: 1440px) and (max-width: 5000px) {
     .our-experts__container-carousel{
         display: none;
     }
@@ -145,7 +147,7 @@
     .our-experts__container-2{
         display: none;
     }
-    #carouselExampleSlidesOnly{
+    #carouselExampleSlidesOnly-1{
         width: 100%;
     }
     .our-experts__expert-name,.our-experts__experience, .our-experts__back-expertName{
@@ -159,7 +161,7 @@
     .our-experts__container-2{
         display: none;
     }
-    #carouselExampleSlidesOnly{
+    #carouselExampleSlidesOnly-1{
         width: 100%;
     }
 }
@@ -167,7 +169,7 @@
     .our-experts__container-2{
         display: none;
     }
-    #carouselExampleSlidesOnly{
+    #carouselExampleSlidesOnly-1{
         width: 100%;
     }
     .our-experts__expert-name{
@@ -193,7 +195,7 @@
     .our-experts__container-2{
         display: none;
     }
-    #carouselExampleSlidesOnly{
+    #carouselExampleSlidesOnly-1{
         width: 100%;
     }
     .our-experts__experience, .our-experts__back-expertName{
@@ -210,5 +212,41 @@
     }
     .our-experts__list-of-experts-2{
         width: 100%;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 320px) {
+    .our-experts__container-2{
+        display: none;
+    }
+    #carouselExampleSlidesOnly-1{
+        width: 200%;
+    }
+    .our-experts__experience, .our-experts__back-expertName{
+        font-size:0.5em;
+    }
+    .our-experts__back-text {
+        font-size: 0.5em;
+    }
+    .our-experts__title{
+        font-size:0.5em;
+    }
+    .our-experts__text{
+        font-size: 0.3em;
+    }
+    .our-experts__list-of-experts-2{
+        width: 100%;
+    }
+    .our-experts__container-1{
+        width: 150%;
+    }
+    .our-experts__title{
+        font-size:1.2rem;
+        text-align: center;
+    }
+    .our-experts__text{
+        font-size: 0.5em;
+    }
+    .our-experts__container-carousel{
+        width:150% ; 
     }
 }
