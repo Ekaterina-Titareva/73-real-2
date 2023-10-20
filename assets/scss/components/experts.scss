@@ -217,33 +217,22 @@
     }
     #carouselExampleSlidesOnly-1{
         width: 200%;
+        padding-right: 52px;
     }
-    .our-experts__experience, .our-experts__back-expertName{
+    .our-experts__experience, .our-experts__back-expertName,.our-experts__back-text,.our-experts__title,.our-experts__text{
         font-size:0.5em;
-    }
-    .our-experts__back-text {
-        font-size: 0.5em;
-    }
-    .our-experts__title{
-        font-size:0.5em;
-    }
-    .our-experts__text{
-        font-size: 0.3em;
     }
     .our-experts__list-of-experts-2{
         width: 100%;
     }
-    .our-experts__container-1{
+    .our-experts__container-1,.our-experts__container-carousel{
         width: 150%;
+    }
+    .our-experts__head {
+        padding-right: 60px;
     }
     .our-experts__title{
         font-size:1.2rem;
         text-align: center;
-    }
-    .our-experts__text{
-        font-size: 0.5em;
-    }
-    .our-experts__container-carousel{
-        width:150% ; 
     }
 }
