@@ -1,4 +1,4 @@
-.services{
+.service{
     height: 60rem;
     flex-shrink: 0;
     background: #F7F7F7;
@@ -7,7 +7,7 @@
     align-items: center;
     gap: 3rem;
 }
-.ourservices{
+.service_title{
     color: $royal_blue;
     font-family: "Asket Extended";
     font-size: 1.75rem;
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
 }
-.textservices{
+.service_text{
     color: $golden;
 text-align: center;
 font-family: "Asket Extended";
@@ -32,7 +32,7 @@ line-height: 120%; /* 1.2rem */
 width: 57.5rem;
 height: 2.375rem;
 }
-.container__services {
+.service_container {
     width: 82.5rem;
 height: 33.625rem;
 flex-shrink: 0;
@@ -42,7 +42,7 @@ justify-content: center;
     align-items: center;
 }
 
-.block_service{
+.service_block{
     width: 26.5rem;
     height: 19.5rem;
     background-color: $white;
@@ -53,7 +53,7 @@ justify-content: center;
 box-shadow: 2px 1px 10px 5px $golden;
 
 }
-.block_service:hover {
+.service_block:hover {
     background-color: $royal_blue;
     color: $white;
     box-shadow: none;
@@ -85,7 +85,7 @@ width: 85vw;
 button {
     margin-bottom: 6.5rem;
 }
-.list_services{
+.service_list{
     text-align: center;
     list-style-type: disc;
     text-align: start;
@@ -113,7 +113,7 @@ button {
 @media screen and (min-width: 769px) and (max-width: 1023px) {
     
     
-    .textservices{
+    .service_text{
         color: $golden;
     text-align: center;
     font-family:"Asket Extended";
@@ -133,7 +133,7 @@ button {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
     
-    .textservices{
+    .service_text{
         color: $golden;
     text-align: center;
     font-family: "Asket Extended";
