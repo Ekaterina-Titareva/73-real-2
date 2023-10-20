@@ -1,4 +1,4 @@
-.services{
+.service{
     height: 60rem;
     flex-shrink: 0;
     background: #F7F7F7;
@@ -6,8 +6,9 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    
 }
-.ourservices{
+.service__title{
     color: $royal_blue;
     font-family: "Asket Extended";
     font-size: 1.75rem;
@@ -21,7 +22,7 @@
     display: flex;
     justify-content: center;
 }
-.textservices{
+.service__text{
     color: $golden;
 text-align: center;
 font-family: "Asket Extended";
@@ -32,17 +33,18 @@ line-height: 120%; /* 1.2rem */
 width: 57.5rem;
 height: 2.375rem;
 }
-.container__services {
-    width: 82.5rem;
+.service__container {
+    width: 100vw;
 height: 33.625rem;
 flex-shrink: 0;
 display: flex;
 gap: 1.5rem;
 justify-content: center;
     align-items: center;
+    
 }
 
-.block_service{
+.service__block{
     width: 26.5rem;
     height: 19.5rem;
     background-color: $white;
@@ -53,7 +55,7 @@ justify-content: center;
 box-shadow: 2px 1px 10px 5px $golden;
 
 }
-.block_service:hover {
+.service__block:hover {
     background-color: $royal_blue;
     color: $white;
     box-shadow: none;
@@ -64,7 +66,7 @@ hr {
     width: 80%;
     height: 1rem;
 }
-.service_name{
+.service__name{
     font-family: "Asket Extended";
     font-size: 1.3rem;
     font-weight: bolder;
@@ -72,38 +74,38 @@ hr {
     
 }
 
-.service_description{
+.service__description{
     font-family: "Asket Extended";
     text-align: center;
     font-size: 14px;
     
 }
 
-.container_carousel {
+.carousel__container {
 width: 85vw;
 }
 button {
     margin-bottom: 6.5rem;
 }
-.list_services{
+.service__list{
     text-align: center;
     list-style-type: disc;
     text-align: start;
 }
-.block_s {
+.block-s {
     width: 80vw;
     box-shadow: none;
 }
 
 @media screen and (min-width: 1440px) {
-    .container_carousel {
+    .carousel__container {
         display: none;
     }
     
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    .block_n{
+    .block-n{
         display: none;
     }
     #carouselExampleSlidesOnly{
@@ -113,7 +115,7 @@ button {
 @media screen and (min-width: 769px) and (max-width: 1023px) {
     
     
-    .textservices{
+    .service__text{
         color: $golden;
     text-align: center;
     font-family:"Asket Extended";
@@ -124,7 +126,7 @@ button {
     width: 35rem;
     height: 2.375rem;
     }
-    .block_n{
+    .block-n{
         display: none;
     }
     #carouselExampleSlidesOnly{
@@ -133,7 +135,7 @@ button {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
     
-    .textservices{
+    .service__text{
         color: $golden;
     text-align: center;
     font-family: "Asket Extended";
@@ -144,7 +146,7 @@ button {
     width: 15rem;
     height: 2.375rem;
     }
-    .block_n{
+    .block-n{
         display: none;
     }
     
@@ -158,7 +160,7 @@ button {
     #carouselExampleSlidesOnly{
         width: 100%;
     }
-    .block_n{
+    .block-n{
         display: none;
     }
     
