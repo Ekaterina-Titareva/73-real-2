@@ -53,15 +53,15 @@
     padding: 1rem 2rem;
     color: $white;
   }
-  .item_g {
+  .item-g {
     color: $white;
   }
 
-  .item_g:hover{
+  .item-g:hover{
     color: $royal_blue;
   }
   
-  .header__nav_items {
+  .header__nav-items{
     display: flex;
     align-items: flex-start;
     gap: 1.1rem;
@@ -96,7 +96,7 @@
     padding: 10px;
   }
   
-  .burger-menu__item {
+  .header__burger-menu-item {
     color: white;
   }
   
@@ -131,7 +131,7 @@
       padding-right: 0.44rem;
     }
   
-    .header__burger_checkbox {
+    .header__burger-checkbox {
       display: block;
       width: 2.2rem;
       height: 2rem;
@@ -144,18 +144,18 @@
       -webkit-touch-callout: none;
     }
   
-    .header__burger_checkbox:checked ~ span {
+    .header__burger-checkbox:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
       background: #ffffff;
     }
   
-    .header__burger_checkbox:checked ~ span:nth-last-child(3) {
+    .header__burger-checkbox:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
   
-    .header__burger_line {
+    .header__burger-line {
       display: block;
       width: 1.8rem;
       height: 4px;
@@ -169,29 +169,29 @@
         transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
   
-    .header__burger_line:first-child {
+    .header__burger-line:first-child {
       transform-origin: 0% 0%;
     }
   
-    .header__burger_line:nth-last-child(2) {
+    .header__burger-line:nth-last-child(2) {
       transform-origin: 0% 100%;
     }
   
-    .header__burger_checkbox:checked ~ span {
+    .header__burger-checkbox:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
   
-    .header__burger_checkbox:checked ~ span:nth-last-child(3) {
+    .header__burger-checkbox:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
   
-    .header__burger_checkbox:checked ~ span:nth-last-child(2) {
+    .header__burger-checkbox:checked ~ span:nth-last-child(2) {
       transform: rotate(-45deg) translate(0, -1px);
     }
   
-    .header__burger_menu {
+    .header__burger-menu {
       display: block;
       position: fixed;
       visibility: hidden;
@@ -206,10 +206,10 @@
       transition-duration: 0.5s;
     }
   
-    .header__burger_menu > li {
+    .header__burger-menu > li {
       margin: 1.7rem;
     }
-    .header__burger_checkbox:checked ~ .header__burger_menu {
+    .header__burger-checkbox:checked ~ .header__burger-menu {
       visibility: visible;
       left: 0;
     }

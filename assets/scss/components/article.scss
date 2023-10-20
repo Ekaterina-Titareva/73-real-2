@@ -119,7 +119,7 @@
 
 }
 
-.item__julia{
+.item-julia{
   width: 90%;
   max-width: 100%;
 }
@@ -134,7 +134,7 @@
   .article-b{
     display: none;
   }
-  .item__julia{
+  .item-julia{
     width: 90%;
     max-width: 100%;
     display: flex;
@@ -146,7 +146,7 @@
   .article-b{
     display: none;
   }
-  .item__julia{
+  .item-julia{
     width: 90%;
     max-width: 100%;
     display: flex;
@@ -162,7 +162,7 @@
   max-width: 300px;
     margin-left: 2rem;
 }
-.item__julia{
+.item-julia{
   width: 90%;
   max-width: 100%;
   display: flex;
@@ -171,7 +171,6 @@
 }
   
 @media screen and (max-width: 319px) {
- 
   .article-b{
     display: none;
   }
