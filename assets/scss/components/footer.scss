@@ -216,6 +216,12 @@ background: $golden;
     .footer__logo{
         display: none;
     }
+    .footer__bottom-section{
+    padding-top: 25px;
+    text-align: left;
+    max-width: 90%;
+    }
+
 }
 @media screen and (max-width:574px){
     .icon{
