@@ -111,7 +111,7 @@
   
     .header__burger {
       display: block;
-      position: absolute;
+      position: fixed;
       right: 0.9rem;
       z-index: 1;
       user-select: none;
