@@ -130,11 +130,18 @@
   .article_b{
     display: none;
   }
+  .article_text {
+  max-width: 300px;
+}
 }
   
 @media screen and (max-width: 319px) {
  
   .article_b{
     display: none;
+  }
+
+  .article_text {
+    max-width: 150px;
   }
 }
