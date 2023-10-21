@@ -406,7 +406,7 @@ a {
 }
 
 .item-g:hover {
-  color: #000000;
+  color: black;
 }
 
 .header__nav-items {
@@ -709,6 +709,20 @@ button {
   #carouselExampleSlidesOnly {
     width: 100%;
   }
+  .service__title {
+    color: #2f3788;
+    font-family: "Asket Extended";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 2.625rem */
+    text-transform: uppercase;
+    width: 100%;
+    height: 2.625rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 319px) {
   #carouselExampleSlidesOnly {
@@ -727,6 +741,24 @@ button {
     line-height: 120%; /* 1.2rem */
     width: 100%;
     height: 2.375rem;
+  }
+  .service__title {
+    color: #2f3788;
+    font-family: "Asket Extended";
+
+    font-size: 1.2rem;
+
+    font-size: smaller;
+
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 2.625rem */
+    text-transform: uppercase;
+    width: 100%;
+    height: 2.625rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -801,6 +833,10 @@ button {
   .container-about .container-about__company .button-wrap .btn_info {
     align-content: center;
     margin: 0% 2% 0% 2%;
+  }
+  .container-about .container-about__company .button-wrap .btn_history {
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 1024px) {
@@ -878,6 +914,10 @@ button {
     align-content: center;
     margin: 0% 2% 0% 2%;
   }
+  .container-about .container-about__company .button-wrap .btn_history {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 @media screen and (max-width: 450px) {
   .container-about {
@@ -939,6 +979,10 @@ button {
   .container-about .button-wrap .btn_history,
   .container-about .button-wrap .btn_info {
     margin-top: 3%;
+  }
+  .container-about .button-wrap .btn_history {
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 .our-experts {
