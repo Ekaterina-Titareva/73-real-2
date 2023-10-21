@@ -31,7 +31,6 @@
         .container-about__company-profile,
         .container-about__company-ogrn,
         .container-about__company-address {
-        width: minmax;
         margin: 3% 0% 3% 0;
         border-bottom: 1px solid $royal_blue;
         overflow-wrap: break-word;
@@ -129,7 +128,7 @@
     .container-about__foto {
             width: 90%;
             margin: 5% 5% 5% 5%;
-            box-shadow: $golden;
+            box-shadow:10px 5px 5px $golden;
             transition: 1s; /* Время эффекта */
     .container-about__about-foto {
         width: 100%;
