@@ -348,7 +348,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 .header__container {
@@ -382,6 +382,10 @@ a {
   max-height: 80px;
 }
 
+.header__burger_menu {
+  width: 100%;
+}
+
 .header__logo-title {
   color: #ffffff;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -405,8 +409,8 @@ a {
   color: #ffffff;
 }
 
-.item-g:hover {
-  color: #2f3788;
+.item_g:hover {
+  color: #B07C4B;
 }
 
 .header__nav-items {
@@ -595,7 +599,7 @@ a {
 }
 
 .service__container {
-  width: 100vw;
+  width: 100%;
   height: 33.625rem;
   flex-shrink: 0;
   display: flex;
@@ -613,6 +617,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 2px 1px 10px 5px #B07C4B;
+  border: 10px double transparent;
 }
 
 .service__block:hover {
@@ -715,6 +720,17 @@ button {
   }
   .block-n {
     display: none;
+  }
+  .service__text {
+    color: #B07C4B;
+    text-align: center;
+    font-family: "Asket Extended";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.2rem */
+    width: 100%;
+    height: 2.375rem;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -844,7 +860,7 @@ button {
   .container-about .container-about__company .container-about___company-fotos .container-about__foto {
     width: 90%;
     margin: 5% 5% 5% 5%;
-    box-shadow:10px 5px 5px #B07C4B;
+    box-shadow: 10px 5px 5px #B07C4B;
     transition: 1s; /* Время эффекта */
   }
   .container-about .container-about__company .container-about___company-fotos .container-about__foto .container-about__about-foto {
@@ -1540,7 +1556,6 @@ button {
 .footer__link {
   text-decoration: none;
   font-family: "Asket Extended", Arial, sans-serif;
-  font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -1681,7 +1696,7 @@ button {
   }
   .footer__top {
     padding: 0;
-    max-width: 80%;
+    max-width: 100%;
   }
   .footer__title {
     font-size: 32px;
@@ -1690,14 +1705,14 @@ button {
     display: flex;
     flex-direction: column;
     padding: 0;
-    max-width: 80%;
+    max-width: 100%;
     align-items: flex-start;
   }
   .footer__questions {
     display: flex;
     flex-direction: column;
     align-items: start;
-    max-width: 80%;
+    max-width: 100%;
   }
   .footer__logo {
     display: none;
@@ -1721,6 +1736,13 @@ button {
   }
   .footer__contact {
     margin: 15px;
+  }
+  .footer__questions-btn {
+    align-self: center;
+  }
+  .btn-f {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
