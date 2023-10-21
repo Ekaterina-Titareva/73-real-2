@@ -107,8 +107,29 @@
 
 @media screen and (max-width: 375px) {
   .news__media {
-    margin-bottom: 25px;
     width: 250px;
     height: 200px;
   }
+}
+
+@media screen and (max-width: 319px) {
+  .news__media {
+    width: 100px;
+    height: 100px;
+  }
+  .news__item-link {
+    max-width: 200px;
+    max-height: 300px;
+    align-items: center;
+  }
+  .news__item-title {
+    font-size: 12px;
+  }
+  .news__date {
+    font-size: 8px;
+  }
+
+  .news__item-text {
+    font-size: 10px;
+}
 }
