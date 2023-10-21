@@ -129,6 +129,9 @@ a {
   width: 90%;
   max-width: 100%;
 }
+.carousel.pointer-event{
+  width:100%;
+}
 @media screen and (min-width: 1440px) {
   .article__slides {
     display: none;
