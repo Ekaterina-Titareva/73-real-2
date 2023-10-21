@@ -326,7 +326,6 @@ template {
   box-sizing: inherit;
   font-family: "Nunito Sans", Arial, sans-serif;
   font-size: 16px;
-  outline: 1px solid red;
 }
 
 li > a:hover {
