@@ -23,13 +23,13 @@
             <p class="header__logo-title">Центр экспертиз и просвещения</p>
           </div>
           <nav class="header__nav">
-            <ul class="header__nav-items">
-              <li><a class="item-g" href="#about">О компании</a></li>
-              <li><a class="item-g" href="#services">Услуги</a></li>
-              <li><a class="item-g" href="#experts">Эксперты</a></li>
-              <li><a class="item-g" href="#article">Статьи</a></li>
-              <li><a class="item-g" href="#news">Новости</a></li>
-              <li><a class="item-g" href="#contacts">Контакты</a></li>
+            <ul class="header__nav_items">
+              <li><a class="item_g" href="#about">О компании</a></li>
+              <li><a class="item_g" href="#service">Услуги</a></li>
+              <li><a class="item_g" href="#experts">Эксперты</a></li>
+              <li><a class="item_g" href="#article">Статьи</a></li>
+              <li><a class="item_g" href="#news">Новости</a></li>
+              <li><a class="item_g" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <nav class="header__burger">
@@ -38,13 +38,25 @@
             <span class="header__burger-line"></span>
             <span class="header__burger-line"></span>
             <ul class="header__burger-menu">
-              <li><a class="header__burger-menu-item" href="#about">О компании</a></li>
-              <li><a class="header__burger-menu-item" href="#services">Услуги</a></li>
-              <li><a class="header__burger-menu-item" href="#experts">Эксперты</a></li>
-              <li><a class="header__burger-menu-item" href="#article">Статьи</a></li>
-              <li><a class="header__burger-menu-item" href="#news">Новости</a></li>
               <li>
-                <a class="header__burger-menu-item" href="#contacts">Контакты</a>
+                <a class="header__burger-menu-item" href="#about">О компании</a>
+              </li>
+              <li>
+                <a class="header__burger-menu-item" href="#services">Услуги</a>
+              </li>
+              <li>
+                <a class="header__burger-menu-item" href="#experts">Эксперты</a>
+              </li>
+              <li>
+                <a class="header__burger-menu-item" href="#article">Статьи</a>
+              </li>
+              <li>
+                <a class="header__burger-menu-item" href="#news">Новости</a>
+              </li>
+              <li>
+                <a class="header__burger-menu-item" href="#contacts"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
@@ -58,9 +70,7 @@
     <!-- Конец блока header -->
     <!--Начало блока Услуги - София-->
     <div class="service" id="service">
-      <div class="service__title">
-        <h2>Наша деятельность</h2>
-      </div>
+      <h2 class="service__title">Наша деятельность</h2>
 
       <div class="service__text">
         "Как приятно знать, что ты что-то узнал!" Мольер
@@ -471,8 +481,8 @@
                   >Медиация и судебное примирение в правозащитном механизме</a
                 >
               </div>
-              <div class="article__time">28 сент. 2023 г.</div>
-              <div class="article__content">
+              <p class="article__time">28 сент. 2023 г.</p>
+              <p class="article__content">
                 Заявленный спектр выступлений широк и охватывает, наверное, все
                 стороны этого института урегулирования споров. Я заявил тему
                 "Медиация и судебное примирение в правозащитном механизме",
@@ -486,7 +496,7 @@
                 разрешения споров (правовая помощь, разветвленная система
                 бесплатной юридической помощи, мировые соглашения, судебные
                 примирители).
-              </div>
+              </p>
             </div>
             <div class="article__item">
               <img
@@ -497,8 +507,8 @@
               <div class="article__pic-title">
                 <a href="#">Юбилей Конституции Российской Федерации</a>
               </div>
-              <div class="article__time">24 сент. 2023 г.</div>
-              <div class="article__content">
+              <p class="article__time">24 сент. 2023 г.</p>
+              <p class="article__content">
                 На этой неделе завершил участие в проекте Поделись своим
                 знанием! Тема лекции : Юбилей Конституции Российской Федерации.
                 Не прогадал, оставив для последних лекций посещение школ Нижнего
@@ -515,7 +525,7 @@
                 ребятишкам и без угроз наш для них "птичий язык" юриспруденции
                 оказался небезынтересен! Проект завершён, всем Спасибо! К Юбилею
                 Конституции Российской Федерации готовы!
-              </div>
+              </p>
             </div>
             <div class="article__item">
               <img
@@ -529,8 +539,8 @@
                   Нижегородской области: 10 лет экспертного соработничества</a
                 >
               </div>
-              <div class="article__time">24 сент. 2021 г.</div>
-              <div class="article__content">
+              <p class="article__time">24 сент. 2021 г.</p>
+              <p class="article__content">
                 Обобщение результатов экспертной работы выявило, что мы
                 применяли нестандартные приёмы, комплексный анализ текста
                 документа и практически ни разу заключение не было «формальным»,
@@ -540,7 +550,7 @@
                 устранения недостатков и даже – не рекомендовать для
                 рассмотрения соответствующим правотворческим органом. Чаще всего
                 к нам прислушивались и экспертное мнение НКС было учтено.
-              </div>
+              </p>
             </div>
           </div>
           <!--Начало блока статьи в адаптивной версии-->
@@ -563,8 +573,8 @@
                       механизме</a
                     >
                   </div>
-                  <div class="article__time">28 сент. 2023 г.</div>
-                  <div class="article__content">
+                  <p class="article__time">28 сент. 2023 г.</p>
+                  <p class="article__content">
                     Заявленный спектр выступлений широк и охватывает, наверное,
                     все стороны этого института урегулирования споров. Я заявил
                     тему "Медиация и судебное примирение в правозащитном
@@ -578,7 +588,7 @@
                     мирного разрешения споров (правовая помощь, разветвленная
                     система бесплатной юридической помощи, мировые соглашения,
                     судебные примирители).
-                  </div>
+                  </p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -591,8 +601,8 @@
                   <div class="article__pic-title">
                     <a href="#">Юбилей Конституции Российской Федерации</a>
                   </div>
-                  <div class="article__time">24 сент. 2023 г.</div>
-                  <div class="article__content">
+                  <p class="article__time">24 сент. 2023 г.</p>
+                  <p class="article__content">
                     На этой неделе завершил участие в проекте Поделись своим
                     знанием! Тема лекции : Юбилей Конституции Российской
                     Федерации. Не прогадал, оставив для последних лекций
@@ -610,7 +620,7 @@
                     талантливым ребятишкам и без угроз наш для них "птичий язык"
                     юриспруденции оказался небезынтересен! Проект завершён, всем
                     Спасибо! К Юбилею Конституции Российской Федерации готовы!
-                  </div>
+                  </p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -627,8 +637,8 @@
                       соработничества</a
                     >
                   </div>
-                  <div class="article__time">24 сент. 2021 г.</div>
-                  <div class="article__content">
+                  <p class="article__time">24 сент. 2021 г.</p>
+                  <p class="article__content">
                     Обобщение результатов экспертной работы выявило, что мы
                     применяли нестандартные приёмы, комплексный анализ текста
                     документа и практически ни разу заключение не было
@@ -639,13 +649,16 @@
                     недостатков и даже – не рекомендовать для рассмотрения
                     соответствующим правотворческим органом. Чаще всего к нам
                     прислушивались и экспертное мнение НКС было учтено.
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <!--Конец блока статьи в адаптивной версии-->
-          <a href="https://vk.com/center_expertise" class="btn article__button"
+          <a
+            href="https://vk.com/center_expertise"
+            target="_blank"
+            class="btn article__button"
             >Все статьи</a
           >
         </div>
@@ -821,7 +834,7 @@
         <nav>
           <ul class="footer__menu">
             <li><a class="footer__link" href="#home">ГЛАВНАЯ</a></li>
-            <li><a class="footer__link" href="#services">УСЛУГИ</a></li>
+            <li><a class="footer__link" href="#service">УСЛУГИ</a></li>
             <li><a class="footer__link" href="#experts">ЭКСПЕРТЫ</a></li>
             <li><a class="footer__link" href="#article">СТАТЬИ</a></li>
             <li><a class="footer__link" href="#news">НОВОСТИ</a></li>
@@ -839,8 +852,12 @@
                   />
                 </div>
                 <div>
-                  <p class="footer__questions-title-caption">Лаврентьев Александр</p>
-                  <p class="footer__questions-title-caption leader">Руководитель</p>
+                  <p class="footer__questions-title-caption">
+                    Лаврентьев Александр
+                  </p>
+                  <p class="footer__questions-title-caption leader">
+                    Руководитель
+                  </p>
                 </div>
               </div>
               <p class="footer__questions-description">
