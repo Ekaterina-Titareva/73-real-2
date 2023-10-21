@@ -844,7 +844,7 @@ button {
   .container-about .container-about__company .container-about___company-fotos .container-about__foto {
     width: 90%;
     margin: 5% 5% 5% 5%;
-    box-shadow:10px 5px 5px #B07C4B;
+    box-shadow: 10px 5px 5px #B07C4B;
     transition: 1s; /* Время эффекта */
   }
   .container-about .container-about__company .container-about___company-fotos .container-about__foto .container-about__about-foto {
@@ -1540,7 +1540,7 @@ button {
 .footer__link {
   text-decoration: none;
   font-family: "Asket Extended", Arial, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -1721,6 +1721,9 @@ button {
   }
   .footer__contact {
     margin: 15px;
+  }
+  .footer__btn {
+    width: 100%;
   }
 }
 
