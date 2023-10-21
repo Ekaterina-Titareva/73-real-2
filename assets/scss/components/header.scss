@@ -61,7 +61,7 @@
   }
 
   .item-g:hover{
-    color: $golden;
+    color: $black;
   }
   
   .header__nav-items{
@@ -87,9 +87,9 @@
   
   .header__title {
     color: $white;
-    background-color: rgba(255, 255, 255, 0.205);
+    background-color: #2f3788e3;
     opacity: 0.9;
-    border-radius: 0.9375em;
+    border-radius: 8px;
     width: 80%;
     text-align: center;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.748);
@@ -205,7 +205,7 @@
       margin: 0;
       padding: 4.45rem 0;
       list-style: none;
-      background-color: $royal_blue;
+      background-color: #2f3788db;
       transition-duration: 0.5s;
     }
   
