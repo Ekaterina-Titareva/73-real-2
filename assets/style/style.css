@@ -745,7 +745,11 @@ button {
   .service__title {
     color: #2f3788;
     font-family: "Asket Extended";
+
+    font-size: 1.2rem;
+
     font-size: smaller;
+
     font-style: normal;
     font-weight: 800;
     line-height: 150%; /* 2.625rem */
@@ -830,6 +834,10 @@ button {
     align-content: center;
     margin: 0% 2% 0% 2%;
   }
+  .container-about .container-about__company .button-wrap .btn_history {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 @media screen and (min-width: 451px) and (max-width: 1024px) {
   .container-about {
@@ -906,6 +914,10 @@ button {
     align-content: center;
     margin: 0% 2% 0% 2%;
   }
+  .container-about .container-about__company .button-wrap .btn_history {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 @media screen and (max-width: 450px) {
   .container-about {
@@ -967,6 +979,10 @@ button {
   .container-about .button-wrap .btn_history,
   .container-about .button-wrap .btn_info {
     margin-top: 3%;
+  }
+  .container-about .button-wrap .btn_history {
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 .our-experts {
