@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   }
   .header__container {
     display: flex;
@@ -35,7 +35,9 @@
     max-width: 80px;
     max-height: 80px;
   }
-  
+  .header__burger_menu{
+    width: 100%;
+  }
   .header__logo-title {
     color: $white;
     text-shadow:  5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -58,7 +60,7 @@
   }
 
   .item_g:hover{
-    color: $royal_blue;
+    color: $golden;
   }
   
   .header__nav_items {
